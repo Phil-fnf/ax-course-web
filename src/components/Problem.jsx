@@ -64,7 +64,9 @@ export default function Problem() {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="text-text-secondary text-center text-base md:text-lg mb-16 max-w-2xl mx-auto"
         >
-          스타일 1개당 2~3분, 200개면 7시간.
+          품번, 컬러 찾아서 일일히 타이핑해서 입력
+          <br />
+          스타일, 컬러 이미지 하나 하나 캡처/내보내기
           <br />
           그 시간에 디자인을 한 개 더 할 수 있습니다.
         </motion.p>
