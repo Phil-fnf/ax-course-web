@@ -28,15 +28,25 @@ const modules = [
   {
     num: '03',
     title: '응용 — 자동화 범위 확장',
-    subtitle: null,
-    items: [],
+    subtitle: '디자인 너머로',
+    items: [
+      '총무: CSV → 명함 일괄 생성 자동화',
+      'VMD: 매장 POP·사이니지 멀티 사이즈 자동 변환',
+      '마케팅: 카탈로그 그리드 자동 배치',
+      '일러스트레이터를 쓰는 곳이라면 어디든 적용 가능',
+    ],
     active: false,
   },
   {
     num: '04',
     title: '클로드 코드 실전 활용법',
-    subtitle: null,
-    items: [],
+    subtitle: '혼자서도 할 수 있게',
+    items: [
+      'Claude Code 핵심 사용법 & 프롬프트 작성 팁',
+      '좋은 프롬프트 vs 나쁜 프롬프트 — 실제 비교',
+      '에러가 났을 때 클로드에게 디버깅 시키기',
+      '라이브 데모: 참석자 요청을 현장에서 자동화',
+    ],
     active: false,
   },
 ]
