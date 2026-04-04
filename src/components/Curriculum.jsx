@@ -14,6 +14,7 @@ const modules = [
       '실습: 시즌 캐드맵으로 전체 스타일 일괄 내보내기',
     ],
     active: true,
+    video: { src: '/autosave-demo.mp4', label: '캐드맵 자동 내보내기 데모' },
   },
   {
     num: '02',
@@ -24,6 +25,7 @@ const modules = [
       'CSV → 캐드맵 → 라이선스캐드 자동 생성 (A4 레이아웃)',
     ],
     active: true,
+    video: { src: '/license-cad-demo.mp4', label: '라이선스캐드 자동 생성 데모' },
   },
   {
     num: '03',
@@ -124,6 +126,24 @@ export default function Curriculum() {
                         </li>
                       ))}
                     </ul>
+                  )}
+
+                  {mod.video && (
+                    <div className="mt-6 rounded-xl overflow-hidden border border-white/5 bg-bg">
+                      <div className="px-3 py-2 border-b border-white/5 flex items-center gap-1.5">
+                        <span className="w-2 h-2 rounded-full bg-red-500/60" />
+                        <span className="w-2 h-2 rounded-full bg-yellow-500/60" />
+                        <span className="w-2 h-2 rounded-full bg-green-500/60" />
+                        <span className="font-mono text-[10px] text-text-secondary ml-2">{mod.video.label}</span>
+                      </div>
+                      <video
+                        className="w-full aspect-video object-cover"
+                        controls
+                        preload="metadata"
+                      >
+                        <source src={mod.video.src} type="video/mp4" />
+                      </video>
+                    </div>
                   )}
                 </div>
               </motion.div>

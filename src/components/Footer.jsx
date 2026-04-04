@@ -40,28 +40,6 @@ export default function Footer() {
           </div>
         </motion.div>
 
-        {/* Demo video 2 */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.5, duration: 0.6 }}
-          className="rounded-2xl overflow-hidden border border-white/5 bg-bg-card mb-16"
-        >
-          <div className="p-4 border-b border-white/5 flex items-center gap-2">
-            <span className="w-3 h-3 rounded-full bg-red-500/60" />
-            <span className="w-3 h-3 rounded-full bg-yellow-500/60" />
-            <span className="w-3 h-3 rounded-full bg-green-500/60" />
-            <span className="font-mono text-xs text-text-secondary ml-3">autosave-demo.mp4</span>
-          </div>
-          <video
-            className="w-full aspect-video object-cover"
-            controls
-            preload="metadata"
-          >
-            <source src="/autosave-demo.mp4" type="video/mp4" />
-          </video>
-        </motion.div>
-
         {/* Bottom bar */}
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">

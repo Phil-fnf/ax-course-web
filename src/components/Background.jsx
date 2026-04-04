@@ -55,28 +55,6 @@ export default function Background() {
           ))}
         </div>
 
-        {/* Demo video */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.8, duration: 0.6 }}
-          className="mt-12 rounded-2xl overflow-hidden border border-white/5 bg-bg-card"
-        >
-          <div className="p-4 border-b border-white/5 flex items-center gap-2">
-            <span className="w-3 h-3 rounded-full bg-red-500/60" />
-            <span className="w-3 h-3 rounded-full bg-yellow-500/60" />
-            <span className="w-3 h-3 rounded-full bg-green-500/60" />
-            <span className="font-mono text-xs text-text-secondary ml-3">license-cad-demo.mp4</span>
-          </div>
-          <video
-            className="w-full aspect-video object-cover"
-            controls
-            preload="metadata"
-            poster="/hero-poster.png"
-          >
-            <source src="/license-cad-demo.mp4" type="video/mp4" />
-          </video>
-        </motion.div>
       </div>
     </section>
   )
