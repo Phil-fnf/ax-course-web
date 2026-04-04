@@ -51,7 +51,7 @@ function FAQItem({ faq, index, isOpen, toggle }) {
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <p className="text-white/60 text-sm md:text-base leading-relaxed pb-6 pl-10">
+            <p className="text-white/60 text-sm md:text-base leading-relaxed pb-6 pl-6 md:pl-10">
               {faq.a}
             </p>
           </motion.div>
