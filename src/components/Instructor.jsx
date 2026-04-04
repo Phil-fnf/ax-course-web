@@ -36,12 +36,25 @@ export default function Instructor() {
             <h3 className="text-xl md:text-2xl font-bold mb-1">
               전상필 <span className="text-lime font-mono text-lg">(Phil)</span>
             </h3>
-            <p className="text-text-secondary text-sm font-mono mb-4">F&F 디지털본부</p>
-            <p className="text-white/70 text-sm md:text-base leading-relaxed">
-              F&F 디지털본부에서 AI &times; 디자인 자동화 프로젝트를 리드하고 있습니다.
-              클로드 코드와 일러스트레이터 JSX를 결합한 CADMAP AUTOSAVE를 직접 설계하고
-              현업에 적용, 팀 내 반복작업 시간을 <span className="text-lime font-semibold">93% 단축</span>했습니다.
+            <p className="text-text-secondary text-sm font-mono mb-5">
+              F&F Process담당 AX팀 · 디스커버리 운영기획팀
             </p>
+            <p className="text-white/70 text-sm md:text-base leading-relaxed mb-4">
+              디스커버리 운영기획팀에서 GTM 일정 설계부터 IMC 통합 마케팅 운영까지,
+              시즌 상품이 기획되고 매장에 나가기까지의 전 과정을 지원하고 있습니다.
+            </p>
+            <p className="text-white/70 text-sm md:text-base leading-relaxed mb-5">
+              브랜드마케팅·인플루언서·VMD·이비즈 등 5개 파트가 참여하는 IMC 워크플로우를 시스템화하고,
+              현업의 반복 업무를 자동화하는 도구를 직접 설계·개발해 현장에 적용하고 있습니다.
+              이 강의에서 다루는 CADMAP AUTOSAVE도 그 과정에서 만들어졌습니다.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {['GTM T&A 설계', 'IMC 시즌 운영', 'Illustrator JSX', 'Claude Code', '업무 자동화'].map((tag, i) => (
+                <span key={i} className="text-xs font-mono text-lime/70 bg-lime/5 px-3 py-1 rounded-md border border-lime/10">
+                  {tag}
+                </span>
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>
