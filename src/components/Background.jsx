@@ -2,8 +2,8 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
 const stats = [
-  { label: '사용 부서', value: '운영기획팀', mono: false },
-  { label: '자동화 대상', value: '캐드맵 이미지 내보내기, 품번/컬러/제품명 삽입, 라이선스 캐드', mono: false },
+  { label: '운영 조직', value: '디스커버리 운영기획팀', sub: 'GTM · IMC 파트 지원', mono: false },
+  { label: '자동화 대상', value: '캐드맵 내보내기, 품번/컬러 삽입, 라이선스 캐드', mono: false },
   { label: '도입 효과', value: '93%', sub: '시간 단축', mono: true },
   { label: '기술 스택', value: 'Illustrator JSX + Claude Code + CSV', mono: true },
   { label: '현재 버전', value: 'v5.3', sub: '안정 운영 중', mono: true },
@@ -26,7 +26,10 @@ export default function Background() {
           <p className="font-mono text-sm text-lime uppercase tracking-wider mb-3">Background</p>
           <h2 className="text-2xl md:text-4xl font-bold mb-4">이 강의가 만들어진 배경</h2>
           <p className="text-text-secondary text-base md:text-lg max-w-2xl mx-auto">
-            디스커버리 운영기획팀에서 실제로 사용 중인 <span className="text-lime font-mono text-sm">CADMAP AUTOSAVE</span> 프로젝트를 기반으로 합니다.
+            디스커버리 운영기획팀은 시즌 GTM 일정 설계부터 IMC 통합 마케팅 운영까지,
+            브랜드마케팅·인플루언서·VMD·이비즈 등 5개 파트의 워크플로우를 지원합니다.
+            그 과정에서 디자이너들이 매 시즌 반복하는 캐드맵 작업을 자동화한 것이
+            <span className="text-lime font-mono text-sm"> CADMAP AUTOSAVE</span>입니다.
           </p>
         </motion.div>
 
