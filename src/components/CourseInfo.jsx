@@ -26,7 +26,7 @@ export default function CourseInfo() {
         >
           <p className="font-mono text-sm text-bg/50 uppercase tracking-wider mb-3">Schedule</p>
           <h2 className="text-3xl md:text-5xl font-extrabold text-bg mb-2">
-            2026년 7월 30일 (수)
+            2026년 7월 30일 (목)
           </h2>
         </motion.div>
 
