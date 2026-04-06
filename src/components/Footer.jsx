@@ -14,45 +14,29 @@ export default function Footer() {
   return (
     <footer ref={ref} className="px-4 pt-24 pb-12 md:pt-32 md:pb-16">
       <div className="max-w-[1100px] mx-auto">
-        {/* Schedule + Preparation combined */}
+        {/* Preparation */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="bg-lime rounded-2xl p-8 md:p-12 mb-16"
+          className="text-center mb-12"
         >
-          <div className="grid md:grid-cols-2 gap-10">
-            {/* Schedule */}
-            <div>
-              <p className="font-mono text-xs text-bg/50 uppercase tracking-wider mb-2">Schedule</p>
-              <h3 className="text-2xl md:text-3xl font-extrabold text-bg mb-6">2026년 7월 30일 (목)</h3>
-              <div className="space-y-3">
-                <div className="bg-bg rounded-xl px-5 py-4">
-                  <p className="font-mono text-lime text-xs uppercase tracking-wider mb-1">오전 세션</p>
-                  <p className="text-xl font-bold text-white">11:00 – 12:00</p>
-                  <p className="text-text-secondary text-xs mt-1">30~40분 강의 + Q&A</p>
-                </div>
-                <div className="bg-bg rounded-xl px-5 py-4">
-                  <p className="font-mono text-lime text-xs uppercase tracking-wider mb-1">오후 세션</p>
-                  <p className="text-xl font-bold text-white">17:00 – 18:00</p>
-                  <p className="text-text-secondary text-xs mt-1">30~40분 강의 + Q&A</p>
-                </div>
-              </div>
-            </div>
+          <p className="font-mono text-sm text-lime uppercase tracking-wider mb-3">Preparation</p>
+          <h2 className="text-2xl md:text-4xl font-bold mb-10">준비물</h2>
 
-            {/* Preparation */}
-            <div>
-              <p className="font-mono text-xs text-bg/50 uppercase tracking-wider mb-2">Preparation</p>
-              <h3 className="text-2xl md:text-3xl font-extrabold text-bg mb-6">준비물</h3>
-              <div className="space-y-3">
-                {preps.map((item, i) => (
-                  <div key={i} className="bg-bg rounded-xl px-5 py-4">
-                    <p className="text-white font-semibold text-sm">{item.label}</p>
-                    <p className="text-text-secondary text-xs mt-1">{item.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div className="grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto mb-16">
+            {preps.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 15 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ delay: 0.2 + i * 0.1, duration: 0.4 }}
+                className="bg-bg-card rounded-xl p-5 border border-white/5 text-center"
+              >
+                <p className="text-white font-semibold text-sm mb-1">{item.label}</p>
+                <p className="text-text-secondary text-xs">{item.desc}</p>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
 

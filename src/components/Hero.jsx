@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
 
 const painPoints = [
-  { title: '에셋이 여기저기 흩어짐', desc: '폴더·메일·메신저에 분산' },
-  { title: '같은 데이터 반복 입력', desc: '품번·컬러를 매번 타이핑' },
-  { title: '파트마다 따로 작업', desc: '기획→디자인→마케팅 단절' },
+  { title: '에셋 하나하나 저장', desc: '캡처 → 이름변경 → 정리' },
+  { title: '자료 바뀔 때마다 재캡처', desc: '같은 이미지 반복 작업' },
+  { title: '품번 수동 입력', desc: '텍스트 직접 타이핑' },
   { title: '정합성 수작업 체크', desc: '오타·누락 눈으로 확인' },
 ]
 
@@ -86,17 +86,9 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.5 }}
-          className="text-bg/70 text-lg md:text-xl mb-3"
+          className="text-bg/70 text-lg md:text-xl mb-10"
         >
           크리에이티브 워크에 집중하세요.
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.85, duration: 0.5 }}
-          className="text-bg/50 text-sm md:text-base mb-10"
-        >
-          흩어진 작업을 하나로 연결하고, 기획부터 매장까지 끊기지 않는 워크플로우를 만듭니다.
         </motion.p>
 
         {/* Pain points */}

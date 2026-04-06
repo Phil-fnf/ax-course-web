@@ -1,7 +1,8 @@
 import Hero from './components/Hero'
 import Problem from './components/Problem'
-import Background from './components/Background'
+import CourseInfo from './components/CourseInfo'
 import Curriculum from './components/Curriculum'
+import Background from './components/Background'
 import Outcomes from './components/Outcomes'
 import Instructor from './components/Instructor'
 import FAQ from './components/FAQ'
@@ -12,8 +13,9 @@ export default function App() {
     <div className="min-h-screen bg-bg">
       <Hero />
       <Problem />
-      <Background />
+      <CourseInfo />
       <Curriculum />
+      <Background />
       <Outcomes />
       <Instructor />
       <FAQ />
