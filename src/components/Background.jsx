@@ -28,8 +28,8 @@ export default function Background() {
           <p className="text-text-secondary text-base md:text-lg max-w-2xl mx-auto">
             디스커버리 운영기획팀은 시즌 GTM 일정 설계부터 IMC 통합 마케팅 운영까지,
             브랜드마케팅·인플루언서·VMD·이비즈 등 5개 파트의 워크플로우를 지원합니다.
-            그 과정에서 디자이너들이 매 시즌 반복하는 캐드맵 작업을 자동화한 것이
-            <span className="text-lime font-mono text-sm"> CADMAP AUTOSAVE</span>입니다.
+            그 과정에서 디자이너들의 캐드맵을 여러 부서에서 각자 하나 하나 캡처해서 사용하는
+            비효율을 개선하고자 하였습니다.
           </p>
         </motion.div>
 

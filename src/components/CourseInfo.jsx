@@ -2,9 +2,9 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
 const targets = [
-  { icon: '📋', text: '매 시즌 캐드맵/이미지를 수작업으로 내보내고 있는 분' },
+  { icon: '📋', text: '일러스트레이터를 매일 쓰지만 스크립트는 한 번도 써본 적 없는 분' },
   { icon: '💬', text: '"코딩은 못 하는데 자동화는 하고 싶다"는 분' },
-  { icon: '🎨', text: '일러스트레이터를 매일 쓰지만 스크립트는 한 번도 써본 적 없는 분' },
+  { icon: '🎨', text: '일러스트레이터 외 Adobe 프로그램에 적용해보고 싶으신 분' },
   { icon: '⏱️', text: '반복작업을 줄여서 크리에이티브 영역에 몰두하고 싶으신 분' },
 ]
 

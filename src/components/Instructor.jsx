@@ -40,8 +40,8 @@ export default function Instructor() {
               F&F Process담당 AX팀 · 디스커버리 운영기획팀
             </p>
             <p className="text-white/70 text-sm md:text-base leading-relaxed mb-4">
-              디스커버리 운영기획팀에서 GTM 일정 설계부터 IMC 통합 마케팅 운영까지,
-              시즌 상품이 기획되고 매장에 나가기까지의 전 과정을 지원하고 있습니다.
+              디스커버리 운영기획팀에서 GTM부터 IMC운영까지,
+              시즌 상품이 기획되고 매장에 나가기까지 부서별 실무자들의 업무 내용을 파악할 수 있었습니다.
             </p>
             <p className="text-white/70 text-sm md:text-base leading-relaxed mb-5">
               브랜드마케팅·인플루언서·VMD·이비즈 등 5개 파트가 참여하는 IMC 워크플로우를 시스템화하고,

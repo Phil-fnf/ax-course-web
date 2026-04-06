@@ -38,6 +38,9 @@ export default function Footer() {
               </motion.div>
             ))}
           </div>
+          <p className="text-text-secondary text-xs text-center mt-6">
+            *일러스트레이터가 없어도, 참관하여 사업부별 실무자에게 전파 해주셔도 좋습니다.
+          </p>
         </motion.div>
 
         {/* Bottom bar */}

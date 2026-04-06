@@ -10,10 +10,10 @@ const beforeItems = [
 ]
 
 const afterItems = [
-  '스크립트 실행 한 번으로 전체 자동 내보내기',
-  'CSV 파일 하나로 일괄 교체',
-  '데이터 기반 A4 시트 자동 생성',
-  '컬러코드 자동 인식 → 개별 파일 내보내기',
+  '스크립트 실행 한 번으로 반복 작업 자동 수행',
+  'CSV 파일을 활용하여 수기 입력 최소화',
+  '원하는 양식을 미리 지정하여 자동 생성',
+  '자동화를 위한 그룹핑 학습 시키기',
   '30분 이내',
 ]
 
@@ -137,26 +137,21 @@ export default function Problem() {
                 <li className="text-white/60 text-sm">
                   <span className="text-white/80 font-medium">컬러웨이 자동 생성</span>
                   <br />
-                  <span className="text-xs">1개 디자인 → 8개 컬러 변형 자동</span>
+                  <span className="text-xs">1개 스타일 → 8개 컬러코드 읽어오기</span>
                 </li>
                 <li className="text-white/60 text-sm">
                   <span className="text-white/80 font-medium">캐드맵 스타일별 이미지 내보내기</span>
                   <br />
                   <span className="text-xs">200개 스타일 일괄 PNG 추출</span>
                 </li>
-                <li className="text-white/60 text-sm">
-                  <span className="text-white/80 font-medium">시즌 컬러 일괄 교체</span>
-                  <br />
-                  <span className="text-xs">매핑 테이블로 전체 색상 한번에</span>
-                </li>
               </ul>
             </div>
 
-            {/* 총무/경영지원 */}
+            {/* 총무 등 공통 부서 */}
             <div className="bg-bg-card rounded-2xl p-6 border border-white/5">
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-lime text-lg">&#9993;</span>
-                <span className="text-white font-semibold">총무 / 경영지원</span>
+                <span className="text-white font-semibold">총무 등 공통 부서</span>
               </div>
               <ul className="space-y-3">
                 <li className="text-white/60 text-sm">
@@ -169,19 +164,14 @@ export default function Problem() {
                   <br />
                   <span className="text-xs">변경분만 CSV 수정 후 재실행</span>
                 </li>
-                <li className="text-white/60 text-sm">
-                  <span className="text-white/80 font-medium">라벨·스티커 대량 제작</span>
-                  <br />
-                  <span className="text-xs">SKU별 제품명·바코드 자동 생성</span>
-                </li>
               </ul>
             </div>
 
-            {/* VMD */}
+            {/* VMD 등 인쇄 관련 */}
             <div className="bg-bg-card rounded-2xl p-6 border border-white/5">
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-lime text-lg">&#9873;</span>
-                <span className="text-white font-semibold">VMD / 매장운영</span>
+                <span className="text-white font-semibold">VMD 등 인쇄 관련</span>
               </div>
               <ul className="space-y-3">
                 <li className="text-white/60 text-sm">
@@ -193,11 +183,6 @@ export default function Problem() {
                   <span className="text-white/80 font-medium">사이니지 멀티 사이즈</span>
                   <br />
                   <span className="text-xs">1개 원본 → A1/B1/현수막 자동 리사이즈</span>
-                </li>
-                <li className="text-white/60 text-sm">
-                  <span className="text-white/80 font-medium">시즌 비주얼 교체</span>
-                  <br />
-                  <span className="text-xs">전 매장 텍스트·이미지 시즌별 일괄 교체</span>
                 </li>
               </ul>
             </div>
